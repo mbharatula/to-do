@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 100vw;
+}
+body,html{
+    font-family: SegoeUI-SemiBold-final, Segoe UI Semibold, SegoeUI-Regular-final, Segoe UI, "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Tahoma, HelveticaArial, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 8vh;
+    padding: 0 15px;
+    width: 100%;
+    background-color: #2564cf;
+    color: #fff;
+}
+.h-btn{
+    font-weight: 200;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #2564cf;
+    border: none;
+    color: #fff;
+    height: 100%;
+    border-bottom: 3px solid #2564cf;
+    width: 120px;
+}
+.h-btn:hover{
+    cursor: pointer;
+    border-bottom: 3px solid #faf9f8;
+}
+#h-home{
+    border-bottom: 3px solid #fff;
+}
+.f-display{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+#f-add{
+    visibility: hidden;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+#f-comp{
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+    visibility: hidden;
+}
+#f-home{
+    z-index: 3;
+    align-items: flex-start;
+    justify-content: center;
+    visibility: visible;
+}
+#a-task{
+    margin-top: 100px;
+    margin: 20px;
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+}
+#a-desc{
+    margin: 20px;
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    height: 100px;
+    resize: vertical;
+    font-family: inherit;
+}
+#a-subm{
+    background-color: #2564cf;
+    border:none;
+    color: #fff;
+    margin: 20px;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+#a-subm:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+}
+#a-heading{
+    margin-top: 20px;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 40px;
+    margin-right: 10px;
+    scale: 3;
+}
+ul{
+    list-style: none;
+    width: 100%;
+}
+li{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 2px solid #d3cfcf;
+}
+#home-head{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.home-tasks{
+    display: flex;
+}
+.home-empty{
+    flex-grow: 0.97;
+}
+li:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+    border-radius: 4px;
+}
+.home-del{
+    border: none;
+    background-color: #fff;
+}
+.home-del:hover{
+    cursor: pointer;
+    color: red;
+}
+#c-head{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.c-tasks{
+    display: flex;
+}
+.c-del{
+    border: none;
+    background-color: #fff;
+}
+.c-del:hover{
+    cursor: pointer;
+    color: red;
+}
+.c-empty{
+    flex-grow: 0.97;
+}

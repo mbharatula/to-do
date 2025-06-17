@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manikanta Bharatula">
+    <title>To Do</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <button id="h-home" class="h-btn">Home</button>
+        <button id="h-add" class="h-btn">Add Task</button>
+        <button id="h-view" class="h-btn">Completed Tasks</button>
+        <button id="h-status" class="h-btn">Progress</button>
+    </header>    
+    <main>
+        <div id="f-home" class="f-display">
+            <div id="home-head">Your Tasks</div>
+            <ul id="home-list">
+                <template id="task-template">
+                    <li><div class="home-tasks">
+                        <input type="checkbox" class="home-done" width="30px">
+                        <span class="home-taskTitle">Some Text Dynamically gets written here</span>
+                        <div class="home-empty"></div>
+                        <button class="home-del material-icons">delete</button>
+                    </div></li>
+                </template>
+            </ul>
+        </div>
+        <div id="f-add" class="f-display">
+            <div id="a-heading">Enter Your Task Details</div>
+            <input id="a-task" class="a-input" type="text" placeholder="Your Task stays here">
+            <textarea id="a-desc" class="a-input" placeholder="Describe your task here"></textarea>
+            <button id="a-subm" type="button">Add Task</button>
+        </div>
+        <div id="f-comp" class="f-display">
+            <div id="c-head">Completed Tasks</div>
+            <ul id="c-list">
+                <template id="ctask-template">
+                    <li><div class="c-tasks">
+                        <span class="c-taskTitle">Some Text</span>
+                        <div class="c-empty"></div>
+                        <button class="c-del material-icons">delete</button>
+                    </div></li>
+                </template>
+                
+            </ul>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
