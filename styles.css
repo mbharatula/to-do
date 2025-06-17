@@ -95,10 +95,7 @@ header{
     margin-top: 20px;
 }
 input[type="checkbox"] {
-    width: 20px;
-    height: 40px;
     margin-right: 10px;
-    scale: 3;
 }
 ul{
     list-style: none;
